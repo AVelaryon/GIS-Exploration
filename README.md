@@ -1,5 +1,5 @@
 # **GIS-Exploration**
-Investigating GIS NYS Disadvantage Community (DAC) dataset. I wish to determine how geographic data can info decision-making and appropriate use-cases regarding transportation. This project aims to answer the following questions:
+Investigating GIS NYS Disadvantage Community (DAC) dataset (and other datasets provided by [Geographic Information Gateway](https://opdgig.dos.ny.gov/search) ). I wish to determine how geographic data can info decision-making and appropriate use-cases regarding transportation. This project aims to answer the following questions:
 * Given all statewide projects, how does GIS data inform future project costs? Or doesn't it?
   * It will/may limit tools use. How does that boost or reduce cost?
   * How may it inform time-completion of projects (i.e. how does geography affect the time to complete a project)?
