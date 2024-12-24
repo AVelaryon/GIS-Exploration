@@ -1,5 +1,5 @@
 # **GIS-Exploration**
-Investigating GIS NYS Disadvantage Community (DAC) dataset (and other datasets provided by [Geographic Information Gateway](https://opdgig.dos.ny.gov/search) ). I wish to determine how geographic data can info decision-making and appropriate use-cases regarding transportation. This project aims to answer the following questions:
+Investigating GIS NYS Disadvantage Community (DAC) dataset (and other datasets provided by [Geographic Information Gateway](https://opdgig.dos.ny.gov/search)). I wish to determine how geographic data can info decision-making and appropriate use-cases regarding transportation. This project aims to answer the following questions:
 * Given all statewide projects, how does GIS data inform future project costs? Or doesn't it?
   * It will/may limit tools use. How does that boost or reduce cost?
   * How may it inform time-completion of projects (i.e. how does geography affect the time to complete a project)?
@@ -17,3 +17,5 @@ There are many approaches:
 How could we tackle this? 
 # Summary
 This project is intended to develop a familiarity with using GIS data, ascertaining it's utility, and develop/formulate ways in which GIS data may inform project costs and prevent project delays. Each question itemized above will be struckthrough, indicating an answered question, followed with a summarized answer. 
+### Endnotes and Updates
+[GIS Exploration](#gis-exploration) Upon inspection, DAC certainly is informative... for a different problem. Extracting [NYS DOT Completed Projects](https://www.dot.ny.gov/projects) would be most appropriate here but will become quite taxing, as it would require a string of url requests. Nevertheless, this is the best option. 
