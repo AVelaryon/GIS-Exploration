@@ -9,7 +9,7 @@
 ## Determine the variables, required data, and **necessary** and **sufficient** assumptions (i.e., constrain assumptions)
 Firstly,
 * Do I truly require GIS data, if the purpose is forecasting cost?
-  * Would Latitude and Longitude suffice?\
+  * Would Latitude and Longitude suffice?
  
 I will include all data provided. Many variables like site location, project type, latitude, longitude, elevation, etc. seem very relevant...
 ## Data Aggregation
