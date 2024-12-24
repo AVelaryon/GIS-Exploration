@@ -18,4 +18,4 @@ How could we tackle this?
 # Summary
 This project is intended to develop a familiarity with using GIS data, ascertaining it's utility, and develop/formulate ways in which GIS data may inform project costs and prevent project delays. Each question itemized above will be struckthrough, indicating an answered question, followed with a summarized answer. 
 ### Endnotes and Updates
-[GIS Exploration](#gis-exploration) Upon inspection, DAC certainly is informative... for a different problem. Extracting [NYS DOT Completed Projects](https://www.dot.ny.gov/projects) would be most appropriate here but will become quite taxing, as it would require a string of url requests. Nevertheless, this is the best option. 
+* [GIS Exploration](#gis-exploration) Upon inspection, DAC certainly is informative... for a different problem. Extracting [NYS DOT Completed Projects](https://www.dot.ny.gov/projects) would be most appropriate here but will become quite taxing, as it would require a string of url requests **within url requests**. Nevertheless, this is the best option. 
