@@ -11,7 +11,7 @@ Firstly,
 * Do I truly require GIS data, if the purpose is forecasting cost?
   * Would Latitude and Longitude suffice?
  
-I will include all data provided. Many variables like site location, project type, latitude, longitude, elevation, etc. seem very relevant...
+I will include all data provided. Many variables like site location, project type, latitude, longitude, elevation, construction schedule variance (categorical and numeric), contract award cost (projected cost), current contract cost (final amount), etc. seem very relevant...
 ## Data Aggregation
 Potential approach:
 * If the interest is accounting for uncertainty of initial cost estimates, appending initial cost and final cost successively could result in **time** being the model driver and, consequently, contributing the most uncertainty, which doesn't say anything about geography rather *we need more time* (perhaps that's the answer, but why do they need more time and how could we account for that in advance?). And, between each observation (i.e., initial and final cost), GIS data of location won't change, but collectively (i.e., over all projects) may "say something" about the location and geographical features (?).
