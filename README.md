@@ -20,5 +20,5 @@ How could we tackle this?
 # Summary
 This project is intended to develop a familiarity with using GIS data, ascertaining it's utility, and develop/formulate ways in which GIS data may inform project costs and prevent project delays. Each question itemized above will be struckthrough, indicating an answered question, followed with a summarized answer. 
 ### Endnotes and Updates
-* [GIS Exploration](#gis-exploration) Upon inspection, DAC certainly is informative... for a different problem. Found an API [NYS Open Data](https://dev.socrata.com/foundry/data.ny.gov/rz8t-4kmq). Requires Pre-processing.
-* Second order of business is ascertaining GIS data of project location, using project title, region, contract number, and info. provided in project status columns. 
+* Found an API [NYS Open Data](https://dev.socrata.com/foundry/data.ny.gov/rz8t-4kmq). Requires Pre-processing.
+* Removed construction features; imputation isn't possible. Overall, many of the model features, like type_of_work, are poorly categorized, as it lacked consistent categories. I'll have to review each cat. and create new cats. Since many of the completed projects involved repairs on long stretches of road, features like region, and some info in project title (once it's cleaned) will have to serve as comprehensive GIS data (many-to-one data is more suited for probabilistic models, e.g., risk analysis of coastal regions which, in hindsight, would be most appropriate)
