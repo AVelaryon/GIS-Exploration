@@ -6,6 +6,7 @@
   * What factors/possibilities may impede its timely completion?
 * What features in GIS data contribute the most to the uncertainty of estimated costs of projects?
   * Once determined, we can't prevent it; we can only account for it.
+![Converted Completed Project (Approx) Location to Lat. & Lon.](https://github.com/user-attachments/assets/c6167cd2-b7c9-465a-81a1-daf9e9aded0a)
 ## Determine the variables, required data, and **necessary** and **sufficient** assumptions (i.e., constrain assumptions)
 Firstly,
 * Do I truly require GIS data, if the purpose is forecasting cost?
