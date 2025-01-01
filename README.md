@@ -6,8 +6,9 @@
   * What factors/possibilities may impede its timely completion?
 * What features in GIS data contribute the most to the uncertainty of estimated costs of projects?
   * Once determined, we can't prevent it; we can only account for it.
-![Converted Completed Project (Approx) Location to Lat. & Lon.](https://github.com/user-attachments/assets/c6167cd2-b7c9-465a-81a1-daf9e9aded0a)
-Converted Completed Project ($\approx$) Location Description to Lat. & Lon. coordinates, using `re` and `geopy`
+![Converted Completed Project (Approx) Location to Lat. & Lon.](https://github.com/user-attachments/assets/234f4c13-de8b-448d-a3fd-644bcdf47b73)
+
+ *Updated* Converted Completed Project ($\approx$) Location Description to Lat. & Lon. coordinates, using `re` and `geopy`
 ## Determine the variables, required data, and **necessary** and **sufficient** assumptions (i.e., constrain assumptions)
 Firstly,
 * Do I truly require GIS data, if the purpose is forecasting cost?
@@ -24,5 +25,5 @@ This project is intended to develop a familiarity with using GIS data, ascertain
 ### Endnotes and Updates
 * Found an API [NYS Open Data](https://dev.socrata.com/foundry/data.ny.gov/rz8t-4kmq). Requires Pre-processing.
 * Removed construction features; imputation isn't possible. Overall, many of the model features, like type_of_work, are poorly categorized, as it lacked consistent categories. I'll have to review each cat. and create new cats. Since many of the completed projects involved repairs on long stretches of road, features like region, and some info in project title (once it's cleaned) will have to serve as comprehensive GIS data (many-to-one data is more suited for probabilistic models, e.g., risk analysis of coastal regions which, in hindsight, would be most appropriate)
-* Converted `project_status` (which provides a description of project location) to Latitude & Longitude coordinates. More geological info (I believe) is needed, though...
+* *Updated Completed Project location data*
 * Extracting unique word from `type_of_work`...   
