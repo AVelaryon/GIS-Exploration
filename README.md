@@ -7,9 +7,10 @@
   * What factors/possibilities may impede its timely completion?
 * What features in GIS data contribute the most to the uncertainty of estimated costs of projects?
   * Once determined, we can't prevent it; we can only account for it.
-![Converted Completed Project (Approx) Location to Lat. & Lon.](https://github.com/user-attachments/assets/234f4c13-de8b-448d-a3fd-644bcdf47b73)
+![Converted Completed Project (Approx) Location to Lat. & Lon.](https://github.com/user-attachments/assets/8634f195-4f47-44f8-90c5-940764788179)
 
- *Updated* Converted Completed Project ($\approx$) Location Description to Lat. & Lon. coordinates, using `re` and `geopy`
+ *Updated* Converted Completed Project ($\approx$) Location Description to Lat. & Lon. coordinates, using `re` and `geopy`.
+ The size of the bubble represents the `approved_cost_change` for each Completed Capital Projects, highlighting an extreme or, relatively, negligible under-estimation of Capital Project costs. Many of the *extreme,* *under-estimated* Completed Capital Projects are located in Long Island (specifically along the coast), in major cities like Buffalo, NY, or more inland around rural areas.
 ## Determine the variables, required data, and **necessary** and **sufficient** assumptions (i.e., constrain assumptions)
 Firstly,
 * Do I truly require GIS data, if the purpose is forecasting cost?
