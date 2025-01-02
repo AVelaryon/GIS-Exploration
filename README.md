@@ -13,6 +13,7 @@
  The size of the bubble represents the `approved_cost_change` for each Completed Capital Projects, highlighting an extreme or, relatively, negligible under-estimation of Capital Project costs. Many of the *extreme,* *under-estimated* Completed Capital Projects are located in Long Island (specifically along the coast), in major cities like Buffalo, NY, or more inland around rural areas. These extreme, under-estimated project costs are more accentuated upon the completion of the project. The size of the bubble represents the `actual_completed_project_award` costs of the project:
  ![Actual Project Costs](https://github.com/user-attachments/assets/79f63cb3-1149-4e5d-970b-8da9174cd860)
 Of course, all of this is contingent on the type of project (i.e. `type_of_work`)...
+According to [World Population Review](https://worldpopulationreview.com/us-counties/new-york), larger project costs occurs in cities with a high population density such as Buffalo, 
  
 ## Determine the variables, required data, and **necessary** and **sufficient** assumptions (i.e., constrain assumptions)
 Firstly,
