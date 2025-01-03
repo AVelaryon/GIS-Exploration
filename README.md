@@ -21,11 +21,9 @@ Firstly,
   * Would Latitude and Longitude suffice?
  
 I will include all data provided. Many variables like site location, project type, latitude, longitude, elevation, construction schedule variance (categorical and numeric), contract award cost (projected cost), current contract cost (final amount), etc. seem very relevant...
-## Data Aggregation
-Potential approach:
-* If the interest is accounting for uncertainty of initial cost estimates, appending initial cost and final cost successively could result in **time** being the model driver and, consequently, contributing the most uncertainty, which doesn't say anything about geography rather *we need more time* (perhaps that's the answer, but why do they need more time and how could we account for that in advance?). And, between each observation (i.e., initial and final cost), GIS data of location won't change, but collectively (i.e., over all projects) may "say something" about the location and geographical features (?).
+
 ## **Funds**: A Cost Risk Problem
-Monte Carlo method would be the best method to approach/handle this [Monte-Carlo Based Method for Cost Overruns](https://www.witpress.com/Secure/ejournals/papers/SSE060221f.pdf)
+Monte Carlo method would be the best method to approach/handle this [Monte-Carlo Based Method for Cost Overruns](https://www.witpress.com/Secure/ejournals/papers/SSE060221f.pdf) In a similar fashion, let's consider `type_of_work`(?) to be cost elements (or maybe `region`)...
 # Summary
 This project is intended to develop a familiarity with using GIS data, ascertaining it's utility, and develop/formulate ways in which GIS data may inform project costs and prevent project delays. Each question itemized above will be struckthrough, indicating an answered question, followed with a summarized answer. 
 ### Endnotes and Updates
