@@ -24,8 +24,8 @@ I will include all data provided. Many variables like site location, project typ
 ## Data Aggregation
 Potential approach:
 * If the interest is accounting for uncertainty of initial cost estimates, appending initial cost and final cost successively could result in **time** being the model driver and, consequently, contributing the most uncertainty, which doesn't say anything about geography rather *we need more time* (perhaps that's the answer, but why do they need more time and how could we account for that in advance?). And, between each observation (i.e., initial and final cost), GIS data of location won't change, but collectively (i.e., over all projects) may "say something" about the location and geographical features (?).
-## **Funds**: A Cost Optimization Problem (?)
-How could we tackle this? 
+## **Funds**: A Cost Risk Problem
+Monte Carlo method would be the best method to approach/handle this
 # Summary
 This project is intended to develop a familiarity with using GIS data, ascertaining it's utility, and develop/formulate ways in which GIS data may inform project costs and prevent project delays. Each question itemized above will be struckthrough, indicating an answered question, followed with a summarized answer. 
 ### Endnotes and Updates
