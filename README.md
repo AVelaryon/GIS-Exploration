@@ -14,16 +14,24 @@
  ![Actual Project Costs](https://github.com/user-attachments/assets/79f63cb3-1149-4e5d-970b-8da9174cd860)
 Of course, all of this is contingent on the type of project (i.e. `type_of_work`)...
 According to [World Population Review](https://worldpopulationreview.com/us-counties/new-york), larger project costs occurs in cities with a high population density such as Buffalo, Syracuse, Albany, and anywhere near NYC
- 
-## Determine the variables, required data, and **necessary** and **sufficient** assumptions (i.e., constrain assumptions)
-Firstly,
-* Do I truly require GIS data, if the purpose is forecasting cost?
-  * Would Latitude and Longitude suffice?
- 
-I will include all data provided. Many variables like site location, project type, latitude, longitude, elevation, construction schedule variance (categorical and numeric), contract award cost (projected cost), current contract cost (final amount), etc. seem very relevant...
 
 ## **Funds**: A Cost Risk Problem
-Monte Carlo method would be the best method to approach/handle this [Monte-Carlo Based Method for Cost Overruns](https://www.witpress.com/Secure/ejournals/papers/SSE060221f.pdf) In a similar fashion, let's consider `type_of_work`(?) to be cost elements (or maybe `region`)...
+Proposed Models: 
+* `RandomForestRegressor`
+* Gaussian Process Regression
+* Neural Network
+* Monte Carlo Simulation 
+Monte Carlo method would be the best method to approach/handle this [Monte-Carlo Based Method for Cost Overruns](https://www.witpress.com/Secure/ejournals/papers/SSE060221f.pdf)\
+Each proposed model has different objecctives. As a "startup" model, `RandomForestRegressor` will be used to ascertain uncertainty/importance of model features and to make projections of potential project costs based on randomized combinations of model features' values. Using `RandomForestRegressor` with HT={`n_estimators=100`, `max_samples=30`, `random_state=0`}, the *total-order permutation variable importance*
+| Feature Names | #1 |
+| :------------:| :---:|
+| region | 0.1425 |
+| federal_funding | 0.06972 |
+| state_funding | 0.06766 |
+| local_funding | 0.17799 |
+| type_of_work | 0.07150 |
+| latitude | 0.42164 |
+| longitude | 0.14155 |
 # Summary
 This project is intended to develop a familiarity with using GIS data, ascertaining it's utility, and develop/formulate ways in which GIS data may inform project costs and prevent project delays. Each question itemized above will be struckthrough, indicating an answered question, followed with a summarized answer. 
 ### Endnotes and Updates
