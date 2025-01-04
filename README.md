@@ -26,7 +26,7 @@ Proposed Models:
 Monte Carlo method would be the best method to approach/handle this [Monte-Carlo Based Method for Cost Overruns](https://www.witpress.com/Secure/ejournals/papers/SSE060221f.pdf)\
 Each proposed model has different objectives. As a "startup" model, `RandomForestRegressor` will be used to ascertain uncertainty/importance of model features and to make projections of potential project costs based on randomized combinations of model features' values.
 
-Using `RandomForestRegressor` with HT={`n_estimators=100`, `max_samples=30`, `random_state=0`}, the *total-order permutation variable importance* (**TPVi**)
+Using `RandomForestRegressor` with HT={`n_estimators=100`, `random_state=0`}, the *total-order permutation variable importance* (**TPVi**)
 
 | Feature Names | TPVi |
 | :------------:| :---:|
