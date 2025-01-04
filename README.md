@@ -5,7 +5,7 @@
    * **Ans:** Dataset doesn't provide this info.
   * How may it inform time-completion of projects (i.e. how does geography affect the time to complete a project)?
   * What factors/possibilities may impede its timely completion?
-* What features in GIS data contribute the most to the uncertainty of estimated costs of projects?
+* What features in GIS data contribute the most to the uncertainty of estimated costs of projects? $^{2}$
   * Once determined, we can't prevent it; we can only account for it.
 ![Converted Completed Project (Approx) Location to Lat. & Lon.](https://github.com/user-attachments/assets/8634f195-4f47-44f8-90c5-940764788179)
 
@@ -40,11 +40,10 @@ Using `RandomForestRegressor` with HT={`n_estimators=100`, `random_state=0`}, th
 
 First, the sum of **TPVi** exceeds 1, suggesting that there may be higher-order terms. Moreover, I removed `contract_award_date` and `estimated_or_actual_completed_date` (or their time delta) because may interest isn't *how the start date of Capital Projects influence/contribute to the variance of Capital Project Costs*, as a project can start on any date. Now, admittedly, a project started during winter months, as opposed to the Spring or Summer, may take longer to complete, resulting in greater uncertainty in Capital Project Costs due to labor costs.  
 
-Notwthstanding, `latitude`, `longitude`, `region`, and `local_funding` are the main contributor to project cost uncertainty and that, when estimating capital project costs, attention should be directed toward the project location (including `region`) and wealth of local governments.
+**Notwthstanding, `latitude`, `longitude`, `region`, and `local_funding` are the main contributor to project cost uncertainty and that, when estimating capital project costs, attention should be directed toward the project location (including `region`) and wealth of local governments.** $^{2}$
 
 $^{1}$ in the works
-# Summary
-This project is intended to develop a familiarity with using GIS data, ascertaining it's utility, and develop/formulate ways in which GIS data may inform project costs and prevent project delays. Each question itemized above will be struckthrough, indicating an answered question, followed with a summarized answer. 
+
 ### Endnotes and Updates
 * Found an API [NYS Open Data](https://dev.socrata.com/foundry/data.ny.gov/rz8t-4kmq). Requires Pre-processing.
 * I'm currently in the **model development stages**
