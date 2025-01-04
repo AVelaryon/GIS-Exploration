@@ -22,7 +22,9 @@ Proposed Models:
 * Neural Network
 * Monte Carlo Simulation 
 Monte Carlo method would be the best method to approach/handle this [Monte-Carlo Based Method for Cost Overruns](https://www.witpress.com/Secure/ejournals/papers/SSE060221f.pdf)\
-Each proposed model has different objecctives. As a "startup" model, `RandomForestRegressor` will be used to ascertain uncertainty/importance of model features and to make projections of potential project costs based on randomized combinations of model features' values. Using `RandomForestRegressor` with HT={`n_estimators=100`, `max_samples=30`, `random_state=0`}, the *total-order permutation variable importance* (TPVi)
+Each proposed model has different objectives. As a "startup" model, `RandomForestRegressor` will be used to ascertain uncertainty/importance of model features and to make projections of potential project costs based on randomized combinations of model features' values.
+
+Using `RandomForestRegressor` with HT={`n_estimators=100`, `max_samples=30`, `random_state=0`}, the *total-order permutation variable importance* (**TPVi**)
 
 | Feature Names | TPVi |
 | :------------:| :---:|
@@ -33,10 +35,10 @@ Each proposed model has different objecctives. As a "startup" model, `RandomFore
 | type_of_work | 0.07150 |
 | latitude | 0.42164 |
 | longitude | 0.14155 |
+
+First, the sum of **TPVi** exceeds 1, suggesting that there may be higher-order terms. Moreover, I removed `contract_award_date` and `estimated_or_actual_completed_date` (or their time delta) because may interest isn't *how the start date of Capital Projects influence/contribute to the variance of Capital Project Costs*, as a project can start on any date. Now, admittedly, a project started during winter months, as opposed to the Spring or Summer, may take longer to complete, resulting in greater uncertainty in Capital Project Costs due to labor costs.  
 # Summary
 This project is intended to develop a familiarity with using GIS data, ascertaining it's utility, and develop/formulate ways in which GIS data may inform project costs and prevent project delays. Each question itemized above will be struckthrough, indicating an answered question, followed with a summarized answer. 
 ### Endnotes and Updates
 * Found an API [NYS Open Data](https://dev.socrata.com/foundry/data.ny.gov/rz8t-4kmq). Requires Pre-processing.
-* Removed construction features; imputation isn't possible. Overall, many of the model features, like type_of_work, are poorly categorized, as it lacked consistent categories. I'll have to review each cat. and create new cats. Since many of the completed projects involved repairs on long stretches of road, features like region, and some info in project title (once it's cleaned) will have to serve as comprehensive GIS data 
-* *Updated Completed Project location data*
-* Finalized Categories for `type_of_work`: Bridge|Pavement|Highway|Traffic|Guiderail|Culvert|Drainage|Vegetation|Other
+* I'm currently in the **model development stages**
