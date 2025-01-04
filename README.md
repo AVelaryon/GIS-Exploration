@@ -40,7 +40,7 @@ Using `RandomForestRegressor` with HT={`n_estimators=100`, `random_state=0`}, th
 
 First, the sum of **TPVi** exceeds 1, suggesting that there may be higher-order terms. Moreover, I removed `contract_award_date` and `estimated_or_actual_completed_date` (or their time delta) because may interest isn't *how the start date of Capital Projects influence/contribute to the variance of Capital Project Costs*, as a project can start on any date. Now, admittedly, a project started during winter months, as opposed to the Spring or Summer, may take longer to complete, resulting in greater uncertainty in Capital Project Costs due to labor costs.  
 
-$^{2}$ **Notwthstanding, `latitude`, `longitude`, `region`, and `local_funding` are the main contributor to project cost uncertainty and that, when estimating capital project costs, attention should be directed toward the project location (including `region`) and wealth of local governments.**
+$^{2}$ **Notwthstanding, `latitude`, `longitude`, `region`, and `local_funding` are the main contributors to project cost uncertainty and that, when estimating capital project costs, attention should be directed toward the project location (including `region`) and wealth of local governments.**
 
 $^{1}$ in the works
 
