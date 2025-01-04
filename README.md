@@ -18,6 +18,7 @@ According to [World Population Review](https://worldpopulationreview.com/us-coun
 ## **Funds**: A Cost Risk Problem
 Proposed Models: 
 * `RandomForestRegressor`
+* `SVR`
 * Gaussian Process Regression
 * Neural Network
 * Monte Carlo Simulation 
