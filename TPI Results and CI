@@ -1,0 +1,35 @@
+({'region': current_award_amount    0.557871
+  dtype: float64,
+  'federal_funding': current_award_amount    0.173538
+  dtype: float64,
+  'state_funding': current_award_amount    0.117688
+  dtype: float64,
+  'local_funding': current_award_amount    0.118429
+  dtype: float64,
+  'type_of_work': current_award_amount    0.140224
+  dtype: float64,
+  'latitude': current_award_amount    0.259746
+  dtype: float64,
+  'longitude': current_award_amount    0.39655
+  dtype: float64},
+ {'region': [np.float64(0.07532123320127926),
+   np.float64(0.12510841465860315),
+   np.float64(0.04978718145732389)],
+  'federal_funding': [np.float64(0.0212037020032525),
+   np.float64(0.0420542166911216),
+   np.float64(0.020850514687869103)],
+  'state_funding': [np.float64(0.013440987767597654),
+   np.float64(0.02871252147121429),
+   np.float64(0.015271533703616638)],
+  'local_funding': [np.float64(0.014029973870188792),
+   np.float64(0.029890606299193625),
+   np.float64(0.01586063242900483)],
+  'type_of_work': [np.float64(0.016513097527578936),
+   np.float64(0.03411023872911267),
+   np.float64(0.01759714120153373)],
+  'latitude': [np.float64(0.0334031847887856),
+   np.float64(0.0612101010248517),
+   np.float64(0.027806916236066098)],
+  'longitude': [np.float64(0.05139389259727469),
+   np.float64(0.09278202877612833),
+   np.float64(0.04138813617885364)]})
