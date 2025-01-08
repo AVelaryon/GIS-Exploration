@@ -30,18 +30,22 @@ Using `RandomForestRegressor` with HT={`n_estimators=100`, `random_state=0`}, th
 
 | Feature Names | TPVi |
 | :------------:| :---:|
-| region | 0.1425 |
-| federal_funding | 0.06972 |
-| state_funding | 0.06766 |
-| local_funding | 0.17799 |
-| type_of_work | 0.07150 |
-| latitude | 0.42164 |
-| longitude | 0.14155 |
+| region | 0.557871 |
+| federal_funding | 0.173538 |
+| state_funding | 0.117688 |
+| local_funding | 0.118429 |
+| type_of_work | 0.140224 |
+| latitude | 0.259746 |
+| longitude | 0.39655 |
 
 First, the sum of **TPVi** exceeds 1, suggesting that there may be higher-order terms. Moreover, I removed `contract_award_date` and `estimated_or_actual_completed_date` (or their time delta) because may interest isn't *how the start date of Capital Projects influence/contribute to the variance of Capital Project Costs*, as a project can start on any date. Now, admittedly, a project started during winter months, as opposed to the Spring or Summer, may take longer to complete, resulting in greater uncertainty in Capital Project Costs due to labor costs.  
 
-$^{2}$ **Notwthstanding, `latitude`, `longitude`, `region`, and `local_funding` are the main contributors to project cost uncertainty and that, when estimating capital project costs, attention should be directed toward the project location (including `region`) and wealth of local governments.**
+$^{2}$ **Notwthstanding, `latitude`, `longitude`, `region`,`type_of_work`,  `federal_funding`, and `local_funding` are the main contributors to project cost uncertainty and that, when estimating capital project costs, attention should be directed toward the project location (including `region`), the `type_of_work` and amount awarded by the federal governments.** Confidence Intervals are attached in above file (*will add later*)
+Furthermore,the cleaned dataset has a total of 234 observation upon data-preprocessing. Each of the first five categorical features were *ordinal-encoded*, using Sci-kit Learn's `OrdinalEncoder`.
 
+** Monte Carlo Simulation**: Design of Experiment
+
+Using the preprocessed dataset, my interest is the annual project cost that ensures the success of all projects with a probability of 95%. Given the nature of the dataset, the project cost elements are the regions...
 $^{1}$ in the works
 
 ### Endnotes and Updates
