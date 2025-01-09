@@ -28,20 +28,20 @@ Each proposed model has different objectives. As a "startup" model, `RandomFores
 
 Using `RandomForestRegressor` with HT={`n_estimators=100`, `random_state=0`}, the *total-order permutation variable importance* (**TPVi**)
 
-| Feature Names | TPVi |
-| :------------:| :---:|
-| region | 0.557871 |
-| federal_funding | 0.173538 |
-| state_funding | 0.117688 |
-| local_funding | 0.118429 |
-| type_of_work | 0.140224 |
-| latitude | 0.259746 |
-| longitude | 0.39655 |
+| Feature Names | TPVi |	5th |	95th | Quantile Width|
+| :----: | :----: | :----: | :----: | :----: |
+| region	| 0.251807 |	0.177474 |	0.330369	| 0.152896 |
+| federal_funding	| 0.078458	| 0.053866	| 0.105341	| 0.051475 |
+| state_funding	| 0.062875 |	0.045097	| 0.081580	| 0.036482 |
+| local_funding	| 0.062945 |	0.045879	| 0.081744	| 0.035866 |
+| type_of_work	| 0.104305	| 0.073766	| 0.137792	| 0.064026 |
+| month	| 0.128814	| 0.093242	| 0.164792	| 0.071550 |
+| day	| 0.154680	| 0.107081	| 0.203756	| 0.096675 |
+| year	| 0.344071	| 0.243379	| 0.467036	| 0.223657 |
+| latitude	| 0.151172	| 0.103780	| 0.204678	| 0.100898 |
+| longitude	| 0.127931	| 0.093502	| 0.166442	| 0.072940 |
 
-First, the sum of **TPVi** exceeds 1, suggesting that there may be higher-order terms. Moreover, I removed `contract_award_date` and `estimated_or_actual_completed_date` (or their time delta) because may interest isn't *how the start date of Capital Projects influence/contribute to the variance of Capital Project Costs*, as a project can start on any date. Now, admittedly, a project started during winter months, as opposed to the Spring or Summer, may take longer to complete, resulting in greater uncertainty in Capital Project Costs due to labor costs.  
 
-$^{2}$ **Notwthstanding, `latitude`, `longitude`, `region`,`type_of_work`,  `federal_funding`, and `local_funding` are the main contributors to project cost uncertainty and that, when estimating capital project costs, attention should be directed toward the project location (including `region`), the `type_of_work` and amount awarded by the federal governments.** Confidence Intervals are attached in above file (*will add later*)
-Furthermore,the cleaned dataset has a total of 234 observation upon data-preprocessing. Each of the first five categorical features were *ordinal-encoded*, using Sci-kit Learn's `OrdinalEncoder`.
 
 ** Monte Carlo Simulation**: Design of Experiment
 
