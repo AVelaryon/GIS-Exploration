@@ -44,7 +44,8 @@ Using `RandomForestRegressor` with HT={`n_estimators=100`, `random_state=0`}, th
 
 ** Monte Carlo Simulation**: Design of Experiment
 
-Using the preprocessed dataset, my interest is the annual project cost that ensures the success of all projects with a probability of 95%. Given the nature of the dataset, the project cost elements are the regions...
+Using the preprocessed dataset, my interest is the annual project cost that ensures the success of all projects with a probability of 95%. Given the nature of the dataset, the project cost elements are the regions, each consisting of the expected `contract_award_amount` and maximum `current_award_amount`. Each project cost element is Gaussian, consistent with the probability distributions corresponding to the cost of the `type_of_work` categorical variables. For each cost element, a random sample is draw from their respective probability distribution, defined entirely by the expected `contract_award_amount` and its deviation from the maximum `current_award_amount`, then summed, equaling the total annual project cost
+For a **95% success probability** of all projects, NYS DOT annual project budget must be **$365,327,161.24**.
 $^{1}$ in the works
 
 ### Endnotes and Updates
