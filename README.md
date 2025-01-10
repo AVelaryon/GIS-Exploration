@@ -21,7 +21,7 @@ Proposed Models:
 * `SVR`
 * Gaussian Process Regression
 * Neural Network
-* Monte Carlo Simulation $^{1}$
+* Monte Carlo Simulation 
 
 Monte Carlo method would be the best method to approach/handle this [Monte-Carlo Based Method for Cost Overruns](https://www.witpress.com/Secure/ejournals/papers/SSE060221f.pdf) [Cost Overruns](https://ijisrt.com/assets/upload/files/IJISRT23APR1646.pdf)\
 Each proposed model has different objectives. As a "startup" model, `RandomForestRegressor` will be used to ascertain uncertainty/importance of model features and to make projections of potential project costs based on randomized combinations of model features' values.
@@ -45,8 +45,9 @@ Using `RandomForestRegressor` with HT={`n_estimators=100`, `random_state=0`}, th
 ** Monte Carlo Simulation**: Design of Experiment
 
 Using the preprocessed dataset, my interest is the annual project cost that ensures the success of all projects with a probability of 95%. Given the nature of the dataset, the project cost elements are the regions, each consisting of the expected `contract_award_amount` and maximum `current_award_amount`. Each project cost element is Gaussian, consistent with the probability distributions corresponding to the cost of the `type_of_work` categorical variables. For each cost element, a random sample is draw from their respective probability distribution, defined entirely by the expected `contract_award_amount` and its deviation from the maximum `current_award_amount`, then summed, equaling the total annual project cost
+
 For a **95% success probability** of all projects, NYS DOT annual project budget must be **$365,327,161.24**.
-$^{1}$ in the works
+
 
 ### Endnotes and Updates
 * Found an API [NYS Open Data](https://dev.socrata.com/foundry/data.ny.gov/rz8t-4kmq). Requires Pre-processing.
