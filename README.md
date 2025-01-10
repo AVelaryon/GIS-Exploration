@@ -40,7 +40,7 @@ Using `RandomForestRegressor` with HT={`n_estimators=100`, `random_state=0`}, th
 | latitude	| 0.216691	| 0.183160	| 0.252752	| 0.069591 |
 | longitude	| 0.274353	| 0.232364	| 0.317739	| 0.085374 |
 
-***Insufficient Data***
+***Insufficient Data***: **Dataset contains 232 observations**
 
 ** Monte Carlo Simulation**: Design of Experiment
 
