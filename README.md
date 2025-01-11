@@ -9,13 +9,16 @@ I wish to determine how geographic data can info decision-making and appropriate
   * Once determined, we can't prevent it; we can only account for it.
 ![Converted Completed Project (Approx) Location to Lat. & Lon.](https://github.com/user-attachments/assets/8634f195-4f47-44f8-90c5-940764788179)
 
- *Updated* Converted Completed Project ($\approx$) Location Description to Lat. & Lon. coordinates, using `re` and `geopy`.
+ *Updated* Converted Completed Project ($\approx$) Location Description to Lat. & Lon. coordinates using `re` and `geopy`.
  The size of the bubble represents the `approved_cost_change` for each Completed Capital Projects, highlighting an extreme or, relatively, negligible under-estimation of Capital Project costs. Many of the *extreme,* *under-estimated* Completed Capital Projects are located in Long Island (specifically along the coast), in major cities like Buffalo, NY, or more inland around rural areas. These extreme, under-estimated project costs are more accentuated upon the completion of the project. The size of the bubble represents the `current_award_amount` costs of the project:
  ![Actual Project Costs](https://github.com/user-attachments/assets/79f63cb3-1149-4e5d-970b-8da9174cd860)
 Of course, all of this is contingent on the type of project (i.e. `type_of_work`)...
 According to [World Population Review](https://worldpopulationreview.com/us-counties/new-york), larger project costs occurs in cities with a high population density such as Buffalo, Syracuse, Albany, and anywhere near NYC
 
 ## **Funds**: A Cost Risk Problem
+I should first note that the dataset (i.e., [NYS Open Data](https://dev.socrata.com/foundry/data.ny.gov/rz8t-4kmq)) has 1,932 observations, consisting of project information, namely `major_pin`, `contract_number`, `region`, `project_title`, `project_status`, `status`, `bid_opening_date`, `federal_funding`, `state_funding`, `local_funding`, `type_of_work`, `public_friendly_description`, `contract_award_date`, `contract_award_amount`, `approved_cost_changes`, `current_award_amount`, `estimated_or_actual_completed_date`, `schedule_performance`, `cost_performance`, `in_future_development_start_date`, `construction_start_date`, `construction_end_date`, and `construction_amount`. Many of the features are useless, as they don't have any measurable/discernable influence on the output of interest (i.e., `current_award_amount`) such as `major_pin`, `contract_number`, etc and, thus, were promptly removed from the dataset. `construction_start_date`, `construction_end_date`, and `construction_amount` were also removed since the features had a plethora of missing values, making imputation infeasible/intractable. `contract_award_amount` had 1,358 missing values, resulting in a dataset of length 574. And of the 574 observation, 225 of them had a *Completed Project* `status`.
+
+I extracted geographic information pertaining to project location using Python's `re` and `geopy` modules, creating new features of the `region` categorical feature: `latitude` and `longitude`. Moreover, `type_of_work` feature was re-categorized using the frequency of unique words, resulting in categories "Highway", "Traffic", "Drainage", and "Other". Subsequently, resampling was performed using *Imbalanced* Learn's `SMOTEN`, resulting in 232 observations.
 Proposed Models: 
 * `RandomForestRegressor`
 * `SVR`
