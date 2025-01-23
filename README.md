@@ -51,7 +51,7 @@ Using the preprocessed dataset, my interest is the annual project cost that ensu
 
 For a **95% success probability** of all *232* projects, NYS DOT annual project budget must be **$365,327,161.24**.
 ![MC Simulation](https://github.com/user-attachments/assets/105836bd-3282-49b6-9722-c0662a9538bc)
-
+[Probabilistic Imputation for Cost & Risk](https://www.johnreilly.us/publicationspdfs/Reillly-2015-Cost-Risk-paper-v1.pdf)
 
 ### Endnotes and Updates
 * Found an API [NYS Open Data](https://dev.socrata.com/foundry/data.ny.gov/rz8t-4kmq). Requires Pre-processing.
